@@ -1,0 +1,12 @@
+body{
+    font-family: 'Montserrat', sans-serif;
+}
+
+.container {
+    max-width: 1440px;
+    margin: 0 auto;
+    padding-top: 0;
+    padding-bottom: 0;
+    padding-right: clamp(1.25rem, 0.893rem + 1.79vw, 2.5rem);
+    padding-left: clamp(1.25rem, 0.893rem + 1.79vw, 2.5rem);
+}

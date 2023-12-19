@@ -1,0 +1,116 @@
+
+.rabbat{
+    color: var(--txt-white, #FFF);
+    text-align: center;
+    font-size: clamp(2.5rem, 2.071rem + 2.14vw, 4rem);
+    font-style: normal;
+    font-weight: 700;
+    line-height: 110%;
+    margin-top: 80px;
+    margin-bottom: 124px;
+    border-radius: var(--radius-big, 12px);
+    background: linear-gradient(261deg, #0B710B 32.63%, #393 98.96%);
+    padding: 32px 32px 0px 32px ;
+}
+
+.order{
+    display: flex;
+    gap: 32px;
+    height: 22.5rem;
+    margin-top: 24px;
+}
+
+.fotoOrder{
+    display: flex;
+    align-self: flex-end;
+    overflow: hidden;
+    height: clamp(13.375rem, 10.768rem + 13.04vw, 22.5rem);   
+}
+
+.fotoOrder img {
+    object-fit: cover;
+    width: 100%;
+}
+
+.form{
+    width: clamp(17.5rem, 12.583rem + 21.85vw, 32.25rem);
+    padding-bottom: 32px;
+}
+
+@media (max-width: 1000px){
+    .rabbat{
+        margin-top: 60px;
+        margin-bottom: 60px;
+    }
+}
+@media (max-width: 700px){
+    .form{
+        padding: 20px 20px 0 20px;
+        width:  30rem;
+    }
+    .order{
+        display: flex;
+        flex-direction: column-reverse;
+        gap: 24px;
+        height: 37rem;
+}
+.fotoOrder img {
+    align-self: flex-end;
+}
+}
+@media (max-width: 600px){
+    .form{
+        width: 27.5rem;
+}}
+@media (max-width: 560px){
+    .form{
+        width: 25.5rem;
+}}
+
+@media (max-width: 520px){
+    .form{
+        width: 23rem;
+}}
+
+@media (max-width: 480px){
+    .order{
+        display: flex;
+        flex-direction: column-reverse;
+        gap: 24px;
+        width: 27.5rem;
+        height: 37rem;
+}
+
+.form{
+    width: 20rem;
+}
+
+.fotoOrder img {
+    width: 466px;
+    padding-right: 56px;
+    align-self: flex-end;
+}
+}
+@media (max-width: 420px){
+    .form{
+        width: 18rem;
+    }
+    
+    .fotoOrder img {
+        width: 81%;
+        height: 102%;
+}
+}
+
+@media (max-width: 380px){
+    .form{
+        width: 16rem;
+    }
+    
+    .fotoOrder img {
+        width: 72%;
+        height: 102%;
+}
+.rabbat{
+    margin-bottom: 20px;
+}}
