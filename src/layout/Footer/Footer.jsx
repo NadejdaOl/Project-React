@@ -1,12 +1,11 @@
 import React from "react";
 
 import classes from './Footer.module.css';
-import commonClasses from '../../../styles/Common.module.css';
+import commonClasses from '../../styles/Common.module.css';
 
-import instagram from '../../../img/ic-instagram.svg';
-import whatsapp from '../../../img/ic-whatsapp.svg';
-import map from '../../../img/map.svg';
-
+import instagram from '../../media/ic-instagram.svg';
+import whatsapp from '../../media/ic-whatsapp.svg';
+import Map from "../../components/Map/Map";
 
 function Footer () {
     return (
@@ -55,9 +54,7 @@ function Footer () {
                             <p className={classes.number}>24 hours a day</p>
                         </div>
 
-                    <div className={classes.map}>
-                        <img src={map} alt="map" />
-                    </div>
+                    <Map />    
 
                         </div>
                     </div>

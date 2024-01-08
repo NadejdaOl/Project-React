@@ -1,9 +1,9 @@
 import React,{useState} from "react";
-import logo from '../../../img/logo-garten.svg';
-import nav from '../../../img/nav.svg';
-import commonClasses from '../../../styles/Common.module.css';
-import {ReactComponent as Icon} from "./../../../img/menu.svg";
-// import closeIcon from "./../../../img/open menu.svg";
+import { Link } from 'react-router-dom';
+import logo from '../../media/logo-garten.svg';
+import nav from '../../media/nav.svg';
+import commonClasses from '../../styles/Common.module.css';
+import {ReactComponent as Icon} from "./../../media/menu.svg";
 
 import classes from './Header.module.css';
 
@@ -26,10 +26,18 @@ const Header = () => {
 
                     <div className={`${classes.header_nav} ${isOpen ? "active" : ""}`}>
                         <ul className={classes.nav_list}>
-                            <li className={classes.nav_list_item}><a href="#!">Main Page</a></li>
-                            <li className={classes.nav_list_item}><a href="#!">Categories</a></li>
-                            <li className={classes.nav_list_item}><a href="#!">All products</a></li>
-                            <li className={classes.nav_list_item}><a href="#!">All sales</a></li>
+                            <li className={classes.nav_list_item}>
+                                <Link to="/">Main Page</Link>
+                            </li>
+                            <li className={classes.nav_list_item}>
+                                <Link to="/categories">Categories</Link>
+                            </li>
+                            <li className={classes.nav_list_item}>
+                                <Link to="/products">All products</Link>
+                            </li>
+                            <li className={classes.nav_list_item}>
+                                <Link to="/sales">All sales</Link>
+                            </li>
                         </ul>
                     </div>
 

@@ -1,13 +1,16 @@
 import React from "react";
 
-import classes from "./Main.module.css";
+import classes from "./mainPage.module.css";
 import commonClasses from '../../styles/Common.module.css';
-import Header from './../../components/layout/Header/Header';
 
-const Main = () => {
+import CategoriesTitle from "../../components/CategoriesTitle/CategoriesTitle";
+import CategoriesAll from "../../components/CategoriesAll/CategoriesAll";
+import Discount from "../../components/Discount/Discount";
+import Product from "../../components/Product/Product";
+
+const MainPage = () => {
     return (
     <div>
-        <Header />
         <section className={classes.main}>
 
             <div className={commonClasses.container}>
@@ -24,10 +27,16 @@ const Main = () => {
                         </a>
                     </div>
                 </div>
+                
             </div>
-    </section> 
+                
+    </section>
+                <CategoriesTitle />
+                <CategoriesAll />
+                <Discount />
+                <Product /> 
     </div>      
     )
 }
 
-export default Main;
+export default MainPage;

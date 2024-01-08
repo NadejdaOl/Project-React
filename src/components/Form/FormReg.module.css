@@ -14,6 +14,7 @@
     font-weight: 500;
     line-height: 130%; 
     flex-shrink: 1; 
+    margin-bottom: 1rem;
 }
 
 .area input[type="text"]::placeholder {
@@ -37,7 +38,12 @@
     margin-top: 32px;
     margin-bottom: 32px; 
     padding: 16px 32px;
+    
 }
+.area_actions button{
+    border: none;
+}
+
 @media (max-width: 700px){
     .area input[type="text"]{
         margin-bottom: 10px;

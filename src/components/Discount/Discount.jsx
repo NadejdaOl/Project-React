@@ -2,7 +2,7 @@ import React from "react";
 
 import classes from './Discount.module.css';
 import commonClasses from '../../styles/Common.module.css';
-import discount from '../../img/discount.svg';
+import discount from '../../media/discount.svg';
 import FormReg from './../Form/FormReg';
 
 function Discount () {

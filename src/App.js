@@ -1,18 +1,25 @@
 import React from "react";
+import { BrowserRouter as Router, Route, Routes } from 'react-router-dom';
 
-import   Main   from "./pages/Main/Main";
-import  Discount  from "./components/Discount/Discount";
-import  Footer  from "./components/layout/Footer/Footer";
-
+import Header from "./layout/Header/Header";
+import MainPage from "./pages/MainPage/MainPage";
+import CategoryPage from "./pages/CategoryPage/CategoryPage";
+import Footer from "./layout/Footer/Footer";
 
 function App() {
   return (
-    <div className="App">
-      
-      <Main />
-      <Discount />
-      <Footer />
-    </div>
+    <Router>
+      <div className="App">
+        <Header />
+  
+        <Routes>
+          <Route path="/" element={<MainPage />} />
+          <Route path="/categories" element={<CategoryPage />} />
+        </Routes>
+        
+        <Footer />
+      </div>
+    </Router>
   );
 }
 

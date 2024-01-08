@@ -1,5 +1,6 @@
 .footer{
     margin-top: 80px;
+    margin-bottom: 80px;
 }
 
 .contact{
@@ -69,18 +70,6 @@
     gap: 16px; 
 }
 
-.map{
-    margin-bottom: clamp(3.5rem, 3.071rem + 2.14vw, 5rem);
-    display: flex;
-    overflow: hidden;
-}
-
-.map img{
-    object-fit: cover;
-    width: 100%;
-    height: 21.9rem; 
-}
-
 @media (max-width: 1200px){
     .phone,
     .adress{
@@ -92,12 +81,12 @@
         width: 48%;
         padding: 20px;
     }
-    .map img{
-        height: 15.6rem;
+    Map{
+        height: 250px;
     }
 }
 
-@media (max-width: 768px){
+@media (max-width: 850px){
     .phone,
     .adress{
         width: 62%;
@@ -105,7 +94,7 @@
     }
     .socials,
     .work{
-        width: 30%;
+        width: 35%;
         padding: 20px;
     }
     .connect{
@@ -114,17 +103,55 @@
         gap: 20px;
     }
 }
+
+@media (max-width: 720px){
+    .phone,
+    .adress{
+        width: 55%;
+        padding: 20px;
+    }
+    .socials,
+    .work{
+        width: 41.5%;
+        padding: 20px;
+    }
+}
+
+@media (max-width: 620px){
+    .socials,
+    .work{
+        width: 40.5%;
+        padding: 20px;
+    }
+}
+
 @media (max-width: 550px){
     .connect{
         display: flex;
-        flex-direction: column;
-        margin-left: 20px;
-        
+        flex-direction: column;   
     }
     .phone,
     .adress,
     .socials,
     .work{
         width: 100%;
+    }
+    .footer{
+        margin-top: 56px;
+        margin-bottom: 80px;
+    }
+}
+
+@media (max-width: 400px){
+
+    .phone,
+    .adress,
+    .socials,
+    .work{
+        width: 100%;
+    }
+    .footer{
+        margin-top: 56px;
+        margin-bottom: 80px;
     }
 }
